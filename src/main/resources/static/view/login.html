@@ -1,0 +1,15 @@
+<div ng-controller="loginController">
+	<form ng-submit="autenticar()" novalidate name="frmLogin">
+		
+		<label>Login</label>
+		<input type="text" ng-model="usuario.login" required/>
+
+		<label>Senha</label>
+		<input type="password" ng-model="usuario.senha" required />
+	
+		<input type="submit" value="Autenticar"/>
+		
+		<label>Token: {{token}}</label>
+		
+	</form>
+</div>
